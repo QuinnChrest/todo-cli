@@ -1,21 +1,5 @@
 [
   {
-    "task": "test 1",
-    "done": false
-  },
-  {
-    "task": "test 2",
-    "done": true
-  },
-  {
-    "task": "test 5",
-    "done": true
-  },
-  {
-    "task": "test 6",
-    "done": false
-  },
-  {
     "task": "finish project",
     "done": true
   }
