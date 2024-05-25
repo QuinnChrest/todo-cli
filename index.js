@@ -5,7 +5,7 @@ const App = (() => {
   const blessed = require("blessed");
   const path = require("path");
   const fs = require("fs-extra");
-  const TODO_FILE = path.join(__dirname, "todo_list.json");
+  const TODO_FILE = path.join(__dirname, "todo.json");
 
   let screen;
   let program = blessed.program();
