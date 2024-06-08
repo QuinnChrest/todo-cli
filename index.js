@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const App = (() => {
-  const cli = require("commander");
   const blessed = require("blessed");
   const path = require("path");
   const fs = require("fs-extra");
@@ -133,6 +132,7 @@ const App = (() => {
     if (list) {
       screen.remove(list);
     }
+
     list = blessed.box({
       parent: screen,
       top: 0,
