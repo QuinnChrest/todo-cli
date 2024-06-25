@@ -29,7 +29,7 @@ const App = (() => {
   const saveTasks = (tasks, selected) => {
     fs.writeJSONSync(TODO_FILE, tasks, { spaces: 2 });
     listContent.setItems(
-      tasks.map((task) => `${task.done ? "\u2612" : "\u2610"}\t${task.task}`)
+      tasks.map((task) => `  ${task.done ? "x" : " "}  ${task.task}`)
     );
     listContent.select(selected);
     screen.render();
@@ -156,7 +156,7 @@ const App = (() => {
         },
       },
       items: tasks.map(
-        (task) => `${task.done ? "\u2612" : "\u2610"}\t${task.task}`
+        (task) => `  ${task.done ? "x" : " "}  ${task.task}`
       ),
     });
     listContent.select(0);
